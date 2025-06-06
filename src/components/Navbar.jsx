@@ -38,7 +38,7 @@ export default function Navbar() {
       )}
     >
       {/* Logo */}
-      <div className="text-white font-bold text-2xl tracking-wider">
+      <div className="text-white font-bold text-xl tracking-wider">
         <span className="text-[#006CFF]">GIGFLOWW</span>
       </div>
 
@@ -49,7 +49,7 @@ export default function Navbar() {
             key={item}
             to={`/${item.toLowerCase()}`}
             className={classNames(
-              'text-base px-6 py-2 rounded-full transition-all duration-300 font-semibold',
+              'text-base px-5 py-1.5 rounded-full transition-all duration-300 font-semibold',
               active === item
                 ? navStyles[item]
                 : 'text-white hover:bg-white hover:text-blue-600'
@@ -61,14 +61,14 @@ export default function Navbar() {
       </div>
 
       {/* Icons: Settings, Bell, Avatar */}
-      <div className="flex items-center gap-5">
-        <button className="text-white hover:text-gray-200 text-2xl">
+      <div className="flex items-center gap-4">
+        <button className="text-white hover:text-gray-200 text-xl">
           <FiSettings />
         </button>
-        <button className="text-white hover:text-gray-200 text-2xl">
+        <button className="text-white hover:text-gray-200 text-xl">
           <FiBell />
         </button>
-        <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white flex items-center justify-center bg-white">
+        <div className="w-9 h-9 rounded-full overflow-hidden border-2 border-white flex items-center justify-center bg-white">
           {hasAvatar ? (
             <img
               src="https://i.pravatar.cc/350"
